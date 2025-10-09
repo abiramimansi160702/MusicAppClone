@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome cdn -->
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-xh6gygKSpP6+bjWzcy3MlbcqW4u5uKjIqE+8a/EJz+6J4M+KpQe4RlnxJxBxO+2oP7I3u2DXILe6J7x04hH7jQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+  <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand">
+          <img
+            class="logoSpotifyImg"
+            src="images/logoSpotify.png"
+            alt="logoSpotify"
+          />Spotify
+        </li>
+        <a href="#"> <li>Home</li></a>
+        <a href="#"> <li>About</li></a>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="songList">
+        <h2>Lofi Music</h2>
+        <div>
+          <div class="songItem">
+            <img
+              src="images/cover/lofiImg.png"
+              alt=""
+              class="lofiImg"
+              srcset=""
+            />
+
+            <span class="songName">Lofi Music </span>
+            <span class="timeStamp">5:00</span>
+            <img id="1" src="images/play.png" class="songPLay" alt="" />
+          </div>
+          <div class="songItem">
+            <img
+              src="images/cover/shayad.png"
+              alt=""
+              class="lofiImg"
+              srcset=""
+            />
+
+            <span class="songName">shayad</span>
+            <span class="timeStamp">5:00</span>
+            <img id="2" src="images/play.png" class="songPLay" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+      <input
+        type="range"
+        name="range"
+        id="progressBar"
+        value="0"
+        min="0"
+        max="100"
+      />
+      <!-- fontawesome icons -->
+      <div class="icons">
+  <img src="images/backwardPlay.png" alt="" id="previous" />
+  <img src="images/play.png" alt="" id="masterPlay" />
+  <img src="images/forwardPlay.png" alt="" id="next" />
+      </div>
+      <div class="songGif">
+  <img src="gifs/playing.gif" id="gif" alt="" />
+        <span id="song-track">lofi Music</span>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="index.js"></script>
+  </body>
+</html>

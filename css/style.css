@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Bree Serif', serif;
+}
+
+nav {
+    height: 7vh;
+    background-color: rgb(23, 23, 23);
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: white;
+}
+
+.logoSpotifyImg {
+    height: 50px;
+    width: 50px;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 12px;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding-inline: 12px;
+}
+
+/* container section */
+.container {
+    height: 75vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 80%;
+    background-image: url(../images/bgImg.jpg);
+}
+
+.lofiImg {
+    width: 50px;
+
+}
+
+.songItem {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #40979c;
+    border-radius: 20px;
+    width: 200%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.songTitle {
+    display: flex;
+    gap: 12px;
+}
+.songGif{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:35px;
+    left:20px;
+
+}
+.songGif img{
+    width:93px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.songPLay {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+
+.timeStamp {
+    margin: 0px 13px;
+}
+
+/* bottom section */
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#progressBar {
+    width: 80%;
+
+}
+
+.icons {
+    display: flex;
+    gap: 52px;
+    margin-block: 12px;
+}
+
+#previous {
+    width: 38px;
+
+}
+
+#next {
+    width: 50px;
+
+}
+
+#masterPlay {
+    width: 50px;
+
+}
